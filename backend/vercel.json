@@ -1,11 +1,6 @@
 {
-  "buildCommand": "npm install",
-  "devCommand": "npm run dev",
-  "installCommand": "npm install",
-  "framework": null,
   "functions": {
     "api/**/*.js": {
-      "memory": 2048,
       "maxDuration": 60
     }
   },
@@ -14,8 +9,5 @@
       "source": "/api/(.*)",
       "destination": "/api/convert"
     }
-  ],
-  "env": {
-    "NODE_ENV": "production"
-  }
+  ]
 }
