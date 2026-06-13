@@ -41,7 +41,7 @@ export default function Uploader() {
       setLoading(true)
       setProgress(0)
       setDownloadUrl(null)
-      const res = await axios.post('/api/convert', fd, {
+      const res = await axios.post('https://backend-lovat-kappa-12.vercel.app/api/convert', fd, {
         responseType: 'blob',
         onUploadProgress: (e) => {
           if (e.total) setProgress(Math.round((e.loaded / e.total) * 100))
